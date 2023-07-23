@@ -21,24 +21,30 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Windows 10</b>
 
-<h2>Instructions</h2>
+<h2>List of Prerequisites</h2>
+
+- Web Server: Apache or IIS.
+- PHP Versions:
+- osTicket Version 1.15+ 
+- MySQL Database: 5.5+
+
+- <h2>Instructions</h2>
 
 - **Part 1 (Create Virtual Machine in Azure)**
   - Create a Resource Group in Azure
   - Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
     
+![Screen Shot 2023-07-23 at 3 49 33 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/23c8b658-b930-4e63-8281-a0131e9a29ce)
+
+    
 - **Part 2 (Installation)**
 
-Open this: Installation Files
-We will use these files to install osTicket and some of the dependencies. I’m using this offline version to make sure everyone is using the same version of all the files :)
-
-Install / Enable IIS in Windows WITH
-CGI and Common HTTP Features
-World Wide Web Services -> Application Development Features ->
-[X] CGI
-[X] Common HTTP Features
-AND IIS Management Console
-Internet Information Services -> Web Management Tools -> IIS Management Console
+  - Install / Enable IIS in Windows with CGI and Common HTTP Features by accessing the "Control Panel" in Windows.
+  - Click World Wide Web Services -> Application Development Features ->
+	[X] CGI
+	[X] Common HTTP Features
+  - AND IIS Management Console
+	Internet Information Services -> Web Management Tools -> IIS Management Console
 	[X] IIS Management Console
 
 
