@@ -39,10 +39,17 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     
 - **Part 2 (Installation)**
 
-  - Install / Enable IIS in Windows with CGI and Common HTTP Features by accessing the "Control Panel" in Windows.
-  - Click World Wide Web Services -> Application Development Features ->
+  - Install / Enable IIS in Windows with CGI and Common HTTP Features by accessing the "Control Panel" in Windows. Then click on "Programs" and "Turn on Windows features on or off" under "Programs and Features" afterwards.
+ 
+![Screen Shot 2023-07-23 at 3 56 37 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/36ee57ef-59fd-4d5f-b727-27d06da6b2c9)
+
+
+  - Once the windows pop-up, click on "Internet Information Services" drop tab -> World Wide Web Services -> Application Development Features ->
 	[X] CGI
 	[X] Common HTTP Features
+
+![Screen Shot 2023-07-23 at 4 01 31 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/d2a8b447-0bbb-490e-851e-a8d004acab22)
+
   - AND IIS Management Console
 	Internet Information Services -> Web Management Tools -> IIS Management Console
 	[X] IIS Management Console
