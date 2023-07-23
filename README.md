@@ -23,17 +23,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Instructions</h2>
 
-- Part 1 (Create Virtual Machine in Azure)
+- **Part 1 (Create Virtual Machine in Azure)**
   - Create a Resource Group in Azure
   - Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
-
-- Part 2 (Installation)
-
-  - Create an Azure Virtual Machine Windows 10, 4 vCPUs
-  - Name: Vm-osticket
-  - Username: labuser (for example/whatever you chose)
-  - Password: osTicketPassword1! (for example/whatever you chose)
-
+    
+- **Part 2 (Installation)**
 
 Open this: Installation Files
 We will use these files to install osTicket and some of the dependencies. I’m using this offline version to make sure everyone is using the same version of all the files :)
