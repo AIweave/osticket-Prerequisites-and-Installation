@@ -6,6 +6,7 @@
 
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
+**Must Know** - Software and applications in "Instructions" may vary in versions based on updates and user's computer.
 
 <h2>Video Demonstration</h2>
 
@@ -39,35 +40,37 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     
 - **Part 2 (Installation)**
 
-  - Install / Enable IIS in Windows with CGI and Common HTTP Features by accessing the "Control Panel" in Windows. Then click on "Programs" and "Turn on Windows features on or off" under "Programs and Features" afterwards.
+  	- Install / Enable IIS in Windows with CGI and Common HTTP Features by accessing the "Control Panel" in Windows. Then click on "Programs" and "Turn on Windows features on or off" under "Programs and Features" afterwards.
  
 ![Screen Shot 2023-07-23 at 3 56 37 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/36ee57ef-59fd-4d5f-b727-27d06da6b2c9)
 
 
-  - Once the windows pop-up, click on "Internet Information Services" drop tab -> World Wide Web Services -> Application Development Features ->
+- Once the window pop-up, click on "Internet Information Services" drop tab -> World Wide Web Services -> Application Development Features ->
+    
 	[X] CGI
+
 	[X] Common HTTP Features
 
 ![Screen Shot 2023-07-23 at 4 01 31 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/d2a8b447-0bbb-490e-851e-a8d004acab22)
 
-  - AND IIS Management Console
-	Internet Information Services -> Web Management Tools -> IIS Management Console
+- Now, enable IIS Management Console by going to Internet Information Services -> Web Management Tools ->
+
 	[X] IIS Management Console
 
-
-From the Installation Files, download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
-
-From the Installation Files, download and install the Rewrite Module (rewrite_amd64_en-US.msi)
-
-Create the directory C:\PHP
-
-From the Installation Files, download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents into C:\PHP
-!! ATTENTION !!
-If this appears, choose to “Keep” the file:
+![Screen Shot 2023-07-23 at 6 39 46 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/8a0faaa5-7126-4887-864c-396acd98d611)
 
 
 
-If you are still having trouble downloading PHP 7.3.8, please try downloading and installing Google Chrome and doing it from within there. 
+  - From the Installation Files, download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
+
+  - From the Installation Files, download and install the Rewrite Module (rewrite_amd64_en-US.msi)
+
+  - Create the directory C:\PHP by creating an empty folder inside of Window's Directory (C:) within the "File Explorer" located at the bottom of the screen.
+
+![Screen Shot 2023-07-23 at 6 50 21 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/56416b13-1371-4b94-9766-a812876e73f4)
+
+
+From the Installation Files, download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip or the recommended version) and unzip the contents into C:\PHP
 
 From the Installation Files, download and install VC_redist.x86.exe.
 
