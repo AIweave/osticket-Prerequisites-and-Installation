@@ -45,7 +45,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 ![Screen Shot 2023-07-23 at 3 56 37 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/36ee57ef-59fd-4d5f-b727-27d06da6b2c9)
 
 
-- Once the window pop-up, click on "Internet Information Services" drop tab -> World Wide Web Services -> Application Development Features ->
+- Once the window pop-up, click on:
+
+   *Internet Information Services (drop tab) -> World Wide Web Services -> Application Development Features ->*
     
 	[X] CGI
 
@@ -53,7 +55,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 ![Screen Shot 2023-07-23 at 4 01 31 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/d2a8b447-0bbb-490e-851e-a8d004acab22)
 
-- Now, enable IIS Management Console by going to Internet Information Services -> Web Management Tools ->
+- Now, enable IIS Management Console by going to:
+
+   *Internet Information Services -> Web Management Tools ->*
 
 	[X] IIS Management Console
 
@@ -70,21 +74,32 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 ![Screen Shot 2023-07-23 at 6 50 21 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/56416b13-1371-4b94-9766-a812876e73f4)
 
 
-From the Installation Files, download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip or the recommended version) and unzip the contents into C:\PHP
+- From the Installation Files, download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip or the recommended version) and unzip the contents into C:\PHP
 
-From the Installation Files, download and install VC_redist.x86.exe.
+- From the Installation Files, download and install VC_redist.x86.exe.
 
-From the Installation Files, download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi)
-Typical Setup ->
-Launch Configuration Wizard (after install) ->
-Standard Configuration ->
-Password1
+- From the Installation Files, download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi or recommended version). Within the installation, choose the following options when they appear:
+  
+	*Typical Setup -> Launch Configuration Wizard (after install) -> Standard Configuration -> (create a password) (as shown below)*
 
-Open IIS as an Admin
+![Screen Shot 2023-07-23 at 7 03 51 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/f2b70b08-58d3-46a7-88a7-3b638cd6e5dc)
 
-Register PHP from within IIS
 
-Reload IIS (Open IIS, Stop and Start the server)
+- Open IIS as an Admin by entering "ISS" in the search box of the home screen.  Select "Run as administrator".
+
+
+![Screen Shot 2023-07-23 at 7 11 28 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/242ba71a-f2f6-4cb6-8f32-a9c09100a099)
+
+
+- Select "PHP Manager" once ISS Manager appears and click on "Register new PHP version" to register PHP.
+
+![Screen Shot 2023-07-23 at 7 14 55 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/a887fe54-c5eb-4cef-96a8-5a23e2b88928)
+
+- Upload the PHP (C:\PHP) folder that was created previously into entry box.
+
+![Screen Shot 2023-07-23 at 6 50 21 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/56416b13-1371-4b94-9766-a812876e73f4)
+ 
+- Open IIS, Stop, and Start the server
 
 Install osTicket v1.15.8
 Download osTicket from the Installation Files Folder
