@@ -101,7 +101,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
  
 - Open IIS, Stop, and Start the server
 
-  ![Screen Shot 2023-07-23 at 7 21 30 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/58b7af7a-71ad-42e4-b9ce-db7582da3592)
+![Screen Shot 2023-07-23 at 7 21 30 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/58b7af7a-71ad-42e4-b9ce-db7582da3592)
 
 
 **Part 3 (Install osTicket v1.15.8 or the recommended veerion)**
@@ -118,7 +118,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   
   *Go to sites -> Default -> osTicket -> On the right*, click “Browse *:80(http)”
 
-  ![Screen Shot 2023-07-23 at 7 32 31 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/4297b081-15aa-4d51-b3d5-ae935cab6c08)
+![Screen Shot 2023-07-23 at 7 32 31 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/4297b081-15aa-4d51-b3d5-ae935cab6c08)
 
 
 - Some extensions will not be enabled, so:
@@ -127,7 +127,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Click “Enable or disable an extension”
 
-  ![Screen Shot 2023-07-23 at 7 35 38 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/a561b81c-337a-4181-9d97-97837ee7537e)
+![Screen Shot 2023-07-23 at 7 35 38 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/a561b81c-337a-4181-9d97-97837ee7537e)
 
 - Select the following extensions and click "Add" under "Actions" on the right side of the screen.
   
@@ -156,27 +156,27 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
   *right click "ost-config" (in File Explore) -> select "Properties" -> "Security" tab at the top -> select the "Advanced" -> "Disable inheritance" -> "Remove All"*
 
-  ![Screen Shot 2023-07-23 at 7 53 02 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/314e7e46-6fd7-436e-9f3e-5074faf982e3)
+![Screen Shot 2023-07-23 at 7 53 02 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/314e7e46-6fd7-436e-9f3e-5074faf982e3)
 
 - Now apply new permissions:
 
   *"Select a principal" -> Under "Enter the object name to select" type "Everyone" -> select "Check Names" -> click "OK" -> seclect "Full Control" under "Basic Permissions" -> "Apply" -> "OK"*
 
-  ![Screen Shot 2023-07-23 at 7 58 21 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/885d14e3-7bf8-4690-a820-e1f1e23ee95a)
+![Screen Shot 2023-07-23 at 7 58 21 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/885d14e3-7bf8-4690-a820-e1f1e23ee95a)
 
-  ![Screen Shot 2023-07-23 at 7 58 29 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/81964826-a7a7-4787-90fb-596102f9033e)
+![Screen Shot 2023-07-23 at 7 58 29 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/81964826-a7a7-4787-90fb-596102f9033e)
 
-  ![Screen Shot 2023-07-23 at 8 06 50 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/dcb103e4-ae2e-47d0-9808-ec46adcc145c)
+![Screen Shot 2023-07-23 at 8 06 50 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/dcb103e4-ae2e-47d0-9808-ec46adcc145c)
 
 
 - From the Installation Files, download and install HeidiSQL.
 - Open Heidi SQL
 
-  ![Screen Shot 2023-07-23 at 8 12 24 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/e7de4adb-c552-4f9c-9cd0-b7b978bbcbb2)
+![Screen Shot 2023-07-23 at 8 12 24 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/e7de4adb-c552-4f9c-9cd0-b7b978bbcbb2)
 
 - Create a new session, username, and Password1.  For an example, user: root, password: Password1. This information will be entered in osTicket's browser setup.
 
-  ![Screen Shot 2023-07-23 at 8 12 36 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/176639a9-385e-4b1d-9bd2-eebe0e784c4a)
+![Screen Shot 2023-07-23 at 8 12 36 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/176639a9-385e-4b1d-9bd2-eebe0e784c4a)
 
   
 - Connect to the session.
@@ -194,7 +194,7 @@ MySQL Password: Password1*
 
 - After completing the osTicket's setup on the browser, click “Install Now!”
   
-  ![Screen Shot 2023-07-23 at 8 43 31 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/837efdac-7b90-4b58-86f8-c5fc7bbd9b15)
+![Screen Shot 2023-07-23 at 8 43 31 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/837efdac-7b90-4b58-86f8-c5fc7bbd9b15)
 
 
 **Part 5 (Clean up)**
@@ -213,15 +213,15 @@ Delete: *C:\inetpub\wwwroot\osTicket\setup*
   
 *right click "ost-config" (in File Explore) -> select "Properties" -> "Security" tab at the top -> select the "Everyone"*
 
-  ![Screen Shot 2023-07-23 at 8 32 44 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/c80d9081-0fe2-4752-8b32-3d557a51fbc4)
+![Screen Shot 2023-07-23 at 8 32 44 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/c80d9081-0fe2-4752-8b32-3d557a51fbc4)
 
 *"Edit" -> remove all checks except for "Read" and "Read & execute -> "OK" -> "Apply" ->"OK*
 
-  ![Screen Shot 2023-07-23 at 8 32 58 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/76fe91d3-8499-409a-bfe3-9f55ec021bf4)
+![Screen Shot 2023-07-23 at 8 32 58 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/76fe91d3-8499-409a-bfe3-9f55ec021bf4)
 
-  ![Screen Shot 2023-07-23 at 8 33 27 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/d4139fa0-1f59-4dc4-99b0-adab03904e93)
+![Screen Shot 2023-07-23 at 8 33 27 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/d4139fa0-1f59-4dc4-99b0-adab03904e93)
 
 
 Browse to your help desk login page: http://localhost/osTicket/scp/login.php
 
-  ![Screen Shot 2023-07-23 at 8 33 46 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/e4a47c46-94f9-41f9-b3b2-cb2f8da3117a)
+![Screen Shot 2023-07-23 at 8 33 46 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/e4a47c46-94f9-41f9-b3b2-cb2f8da3117a)
