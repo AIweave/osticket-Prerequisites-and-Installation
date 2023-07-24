@@ -29,16 +29,16 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - osTicket Version 1.15+ 
 - MySQL Database: 5.5+
 
-- <h2>Instructions</h2>
+<h2>Instructions</h2>
 
-- **Part 1 (Create Virtual Machine in Azure)**
+**Part 1 (Create Virtual Machine in Azure)**
 - Create a Resource Group in Azure
 - Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
     
 ![Screen Shot 2023-07-23 at 3 49 33 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/23c8b658-b930-4e63-8281-a0131e9a29ce)
 
     
-- **Part 2 (Installation)**
+**Part 2 (Installation)**
 
 - Install / Enable IIS in Windows with CGI and Common HTTP Features by accessing the "Control Panel" in Windows. Then click on "Programs" and "Turn on Windows features on or off" under "Programs and Features" afterwards.
  
@@ -104,7 +104,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   ![Screen Shot 2023-07-23 at 7 21 30 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/58b7af7a-71ad-42e4-b9ce-db7582da3592)
 
 
-- **Part 3 (Install osTicket v1.15.8 or the recommended veerion)**
+**Part 3 (Install osTicket v1.15.8 or the recommended veerion)**
   
   - Download osTicket from the Installation Files Folder
   - Extract and copy “upload” folder to c:\inetpub\wwwroot
@@ -150,7 +150,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   
   To: *C:\inetpub\wwwroot\osTicket\include\ost-config.php*
 
-- **Part 4 (Assign Permissions: ost-config.php)**
+**Part 4 (Assign Permissions: ost-config.php)**
   
 - To change permissions, first disable inheritance: 
 
@@ -166,37 +166,62 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
   ![Screen Shot 2023-07-23 at 7 58 29 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/81964826-a7a7-4787-90fb-596102f9033e)
 
+  ![Screen Shot 2023-07-23 at 8 06 50 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/dcb103e4-ae2e-47d0-9808-ec46adcc145c)
 
-Continue Setting up osTicket in the browser (click Continue)
-Name Helpdesk
-Default email (receives email from customers)
 
-From the Installation Files, download and install HeidiSQL.
-Open Heidi SQL
-Create a new session, root/Password1
-Connect to the session
-Create a database called “osTicket”
+- From the Installation Files, download and install HeidiSQL.
+- Open Heidi SQL
 
-Continue Setting up osticket in the browser
-MySQL Database: osTicket
+  ![Screen Shot 2023-07-23 at 8 12 24 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/e7de4adb-c552-4f9c-9cd0-b7b978bbcbb2)
+
+- Create a new session, username, and Password1.  For an example, user: root, password: Password1. This information will be entered in osTicket's browser setup.
+
+  ![Screen Shot 2023-07-23 at 8 12 36 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/176639a9-385e-4b1d-9bd2-eebe0e784c4a)
+
+  
+- Connect to the session.
+- Create a database called “osTicket”
+
+![Screen Shot 2023-07-23 at 8 13 31 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/c02a4b07-cfc5-43b0-ac63-61e22e80b38c)
+
+![Screen Shot 2023-07-23 at 8 13 56 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/65d226a3-dd88-45b5-9506-c04bc6d08905)
+
+- Continue Setting up osticket in the browser with information created in Heidi SQL.
+
+*MySQL Database: osTicket
 MySQL Username: root
-MySQL Password: Password1
-Click “Install Now!”
+MySQL Password: Password1* 
 
-Congratulations, hopefully it is installed with no errors!
+- After completing the osTicket's setup on the browser, click “Install Now!”
+  
+  ![Screen Shot 2023-07-23 at 8 43 31 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/837efdac-7b90-4b58-86f8-c5fc7bbd9b15)
+
+
+**Part 5 (Clean up)**
+
+- Return to "File Explorer" and follow the this directory to delete the following:
+
+Delete: *C:\inetpub\wwwroot\osTicket\setup*
+
+![Screen Shot 2023-07-23 at 8 26 53 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/4a432a22-3887-48f7-9ba7-c2a9340d079d)
+
+- Set Permissions to “Read” only by returning to ost-config.php at: 
+
+*C:\inetpub\wwwroot\osTicket\include\ost-config.php*
+
+- Next, apply the following settings:
+  
+*right click "ost-config" (in File Explore) -> select "Properties" -> "Security" tab at the top -> select the "Everyone"*
+
+  ![Screen Shot 2023-07-23 at 8 32 44 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/c80d9081-0fe2-4752-8b32-3d557a51fbc4)
+
+*"Edit" -> remove all checks except for "Read" and "Read & execute -> "OK" -> "Apply" ->"OK*
+
+  ![Screen Shot 2023-07-23 at 8 32 58 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/76fe91d3-8499-409a-bfe3-9f55ec021bf4)
+
+  ![Screen Shot 2023-07-23 at 8 33 27 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/d4139fa0-1f59-4dc4-99b0-adab03904e93)
+
+
 Browse to your help desk login page: http://localhost/osTicket/scp/login.php
 
-End Users osTicket URL:
-http://localhost/osTicket/ 
-
-Clean up
-Delete: C:\inetpub\wwwroot\osTicket\setup
-Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
-
-Part 4 (Tickets and Ticket Lifecycle)
-Just practice creating, triaging, and solving tickets. I recommend watching the video to learn about triaging multiple tickets.
-Ticket examples:
-Sev-A (1 hour, 24/7) [entire mobile/online banking system is down] -> SysAdmins
-Sev-B (4 hours, 24/7) [accounting department needs adobe upgrade, broken]
-Sev-B/C (2 hours, business hours) [CFO’s laptop seems a bit slow]
-
+  ![Screen Shot 2023-07-23 at 8 33 46 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/e4a47c46-94f9-41f9-b3b2-cb2f8da3117a)
