@@ -40,7 +40,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     
 - **Part 2 (Installation)**
 
-  	- Install / Enable IIS in Windows with CGI and Common HTTP Features by accessing the "Control Panel" in Windows. Then click on "Programs" and "Turn on Windows features on or off" under "Programs and Features" afterwards.
+- Install / Enable IIS in Windows with CGI and Common HTTP Features by accessing the "Control Panel" in Windows. Then click on "Programs" and "Turn on Windows features on or off" under "Programs and Features" afterwards.
  
 ![Screen Shot 2023-07-23 at 3 56 37 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/36ee57ef-59fd-4d5f-b727-27d06da6b2c9)
 
@@ -101,32 +101,71 @@ This tutorial outlines the prerequisites and installation of the open-source hel
  
 - Open IIS, Stop, and Start the server
 
-Install osTicket v1.15.8
-Download osTicket from the Installation Files Folder
-Extract and copy “upload” folder to c:\inetpub\wwwroot
-Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
+  ![Screen Shot 2023-07-23 at 7 21 30 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/58b7af7a-71ad-42e4-b9ce-db7582da3592)
 
-Reload IIS (Open IIS, Stop and Start the server)
 
-Go to sites -> Default -> osTicket
-On the right, click “Browse *:80”
+- **Part 3 (Install osTicket v1.15.8 or the recommended veerion)**
+  
+  - Download osTicket from the Installation Files Folder
+  - Extract and copy “upload” folder to c:\inetpub\wwwroot
+  - Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
 
-Note that some extensions are not enabled
-Go back to IIS, sites -> Default -> osTicket
-Double-click PHP Manager
-Click “Enable or disable an extension”
-Enable: php_imap.dll
-Enable: php_intl.dll
-Enable: php_opcache.dll
-Refresh the osTicket site in your browse, observe the changes
+![Screen Shot 2023-07-23 at 7 25 22 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/12150281-f165-4ffb-b68b-0541c0386a34)
 
-Rename: ost-config.php
-From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
-To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
-Assign Permissions: ost-config.php
-Disable inheritance -> Remove All
-New Permissions -> Everyone -> All
+- Open IIS, Stop, and Start the server
+- Under "Connections" on left side of the screen,
+  
+  *Go to sites -> Default -> osTicket -> On the right*, click “Browse *:80(http)”
+
+  ![Screen Shot 2023-07-23 at 7 32 31 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/4297b081-15aa-4d51-b3d5-ae935cab6c08)
+
+
+- Some extensions will not be enabled, so:
+
+  *Go back to IIS, sites -> Default -> osTicket*, Double-click "PHP Manager"
+
+- Click “Enable or disable an extension”
+
+  ![Screen Shot 2023-07-23 at 7 35 38 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/a561b81c-337a-4181-9d97-97837ee7537e)
+
+- Select the following extensions and click "Add" under "Actions" on the right side of the screen.
+  
+  Enable: php_imap.dll
+  
+  Enable: php_intl.dll
+  
+  Enable: php_opcache.dll
+
+![Screen Shot 2023-07-23 at 7 35 23 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/0037e6ff-c177-4ec7-9bc6-77a2c52f25f0)
+
+
+- Go to [osTicket](http://localhost/osTicket/scp/login.php) site in your browse.
+
+![68747470733a2f2f692e696d6775722e636f6d2f50504e7a6956352e706e67](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/1df3bf7a-5fb9-43d0-8ae1-e3b1724d501b)
+
+- Return to "File Explorer" to rename: ost-config.php
+  
+  From: *C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php*
+  
+  To: *C:\inetpub\wwwroot\osTicket\include\ost-config.php*
+
+- **Part 4 (Assign Permissions: ost-config.php)**
+  
+- To change permissions, first disable inheritance: 
+
+  *right click "ost-config" (in File Explore) -> select "Properties" -> "Security" tab at the top -> select the "Advanced" -> "Disable inheritance" -> "Remove All"*
+
+  ![Screen Shot 2023-07-23 at 7 53 02 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/314e7e46-6fd7-436e-9f3e-5074faf982e3)
+
+- Now apply new permissions:
+
+  *"Select a principal" -> Under "Enter the object name to select" type "Everyone" -> select "Check Names" -> click "OK" -> seclect "Full Control" under "Basic Permissions" -> "Apply" -> "OK"*
+
+  ![Screen Shot 2023-07-23 at 7 58 21 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/885d14e3-7bf8-4690-a820-e1f1e23ee95a)
+
+  ![Screen Shot 2023-07-23 at 7 58 29 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/81964826-a7a7-4787-90fb-596102f9033e)
+
 
 Continue Setting up osTicket in the browser (click Continue)
 Name Helpdesk
@@ -153,44 +192,6 @@ http://localhost/osTicket/
 Clean up
 Delete: C:\inetpub\wwwroot\osTicket\setup
 Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
-
-Notes:
-Browse to your help desk login page: http://localhost/osTicket/scp/login.php  
-End Users osTicket URL: http://localhost/osTicket/ 
-
-Part 3 (Post Installation Setup)
-Configure Roles
-Admin Panel -> Agents -> Roles
-Supreme Admin
-Configure Departments
-Admin Panel -> Agents -> Departments
-System Administrators
-Configure Teams
-Admin Panel -> Agents -> Teams
-Level I Support
-Level II Support
-Allow anyone to create tickets
-Admin Panel -> Settings -> User Settings
-Registration Required: Require registration and login to create tickets 
-Configure Agents (workers)
-Admin Panel -> Agents -> Add New
-Jane
-John
-Configure Users (customers)
-Agent Panel -> Users -> Add New
-Karen
-Ken
-Configure SLA
-Admin Panel -> Manage -> SLA
-Sev-A (1 hour, 24/7)
-Sev-B (4 hours, 24/7)
-Sev-C (8 hours, business hours)
-Configure Help Topics
-Admin Panel -> Manage -> Help Topics
-Business Critical Outage
-Personal Computer Issues
-Equipment Request
-Password Reset
 
 Part 4 (Tickets and Ticket Lifecycle)
 Just practice creating, triaging, and solving tickets. I recommend watching the video to learn about triaging multiple tickets.
