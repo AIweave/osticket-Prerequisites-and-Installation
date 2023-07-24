@@ -32,8 +32,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - <h2>Instructions</h2>
 
 - **Part 1 (Create Virtual Machine in Azure)**
-  - Create a Resource Group in Azure
-  - Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
+- Create a Resource Group in Azure
+- Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
     
 ![Screen Shot 2023-07-23 at 3 49 33 PM](https://github.com/AIweave/osticket-Prerequisites-and-Installation/assets/121763338/23c8b658-b930-4e63-8281-a0131e9a29ce)
 
